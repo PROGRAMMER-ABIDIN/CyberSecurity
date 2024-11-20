@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Cyber Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Belajar Cyber Security</h1>
+           <h><a>PROGRAMMER ABIDIN</a></h>
+            <nav>
+                <ul>
+                    <li><a href="#modul">Modul Belajar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seksi Modul Belajar -->
+        <section id="modul">
+            <h2>Modul Belajar</h2>
+            <div class="modul-container">
+                <!-- Daftar Topik Belajar -->
+                <div class="modul">
+                    <h3>Dasar Keamanan Siber</h3>
+                    <p>Pengenalan tentang keamanan siber, terminologi, jenis ancaman, dll.</p>
+                    <button onclick="bukaModul('Dasar Keamanan Siber')">Pelajari</button>
+                </div>
+                <div class="modul">
+                    <h3>Keamanan Jaringan</h3>
+                    <p>Firewall, IDS/IPS, jaringan VPN, pengaturan keamanan router, dll.</p>
+                    <button onclick="bukaModul('Keamanan Jaringan')">Pelajari</button>
+                </div>
+                <div class="modul">
+                    <h3>Penetration Testing</h3>
+                    <p>Teknik melakukan uji penetrasi untuk mengidentifikasi celah keamanan dalam sistem.</p>
+                    <button onclick="bukaModul('Penetration Testing')">Pelajari</button>
+                </div>
+                <!-- Materi Baru yang Ditambahkan -->
+                <div class="modul">
+                    <h3>Macam-Macam Virus</h3>
+                    <p>Mengenal berbagai jenis virus komputer yang umum dan bahayanya.</p>
+                    <button onclick="bukaModul('Macam-Macam Virus')">Pelajari</button>
+                </div>
+                <div class="modul">
+                    <h3>Jenis-Jenis Deface</h3>
+                    <p>Mempelajari berbagai jenis serangan deface yang sering terjadi pada website.</p>
+                    <button onclick="bukaModul('Jenis-Jenis Deface')">Pelajari</button>
+                </div>
+                <div class="modul">
+                    <h3>Macam-Macam Malware Lainnya</h3>
+                    <p>Mengenal jenis-jenis malware selain virus, seperti spyware, adware, dan lainnya.</p>
+                    <button onclick="bukaModul('Macam-Macam Malware Lainnya')">Pelajari</button>
+                </div>
+            <!--enkrip & dekrip-->
+            <div class="modul">
+                <h3>Cara Kerja Enkripsi dan Dekripsi</h3>
+                <p>Apa Yang Dimaksud Enkripsi Dan Dekripsi Dan Bagaimana Cara Kerjanya,</p>
+                <button onclick="bukaModul('Enkripsi dan Dekripsi')">Pelajari</button>
+            </div>
+            <!-------->
+            <div class="modul">
+                <h3>Pengertian Cyber Security</h3>
+                <p>Apa Yang Di Maksud Cyber Security Dan Bagaimana Cara Kerjanya,</p>
+                <button onclick="bukaModul('Pengertian Cyber Security')">Pelajari</button>
+            </div>
+            <div class="modul">
+                <h3>Pengertian Kerentanan</h3>
+                <p>Apa Yang Di Maksud Cyber Security Dan Bagaimana Cara Kerjanya,</p>
+                <button onclick="bukaModul('Pengertian Kerentanan')">Pelajari</button>
+          </div>
+          <div class="modul">
+            <h3>Skill Cyber Security</h3>
+            <p>Apa Yang Di Maksud Cyber Security Dan Bagaimana Cara Kerjanya,</p>
+            <button onclick="bukaModul('Skill Cyber Security')">Pelajari</button>
+          </div>
+          <div class="modul">
+            <h3>Keamanan Data Pribadi</h3>
+            <p>Apa Yang Di Maksud Cyber Security Dan Bagaimana Cara Kerjanya,</p>
+            <button onclick="bukaModul('Keamanan Data Pribadi')">Pelajari</button>
+         </div>
+           
+            <!----->
+        </section>
+
+        <!-- Seksi untuk menampilkan materi berdasarkan topik yang dipilih -->
+        <section id="materi-container" class="hidden">
+            <button class="back-button" onclick="kembaliKeModul()">Kembali ke Modul</button>
+            <div id="materi-content"></div>
+        </section>
+
+        <footer>
+            <p1>&copy; BELAJAR CYBER SECURITY 2024</p1>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
